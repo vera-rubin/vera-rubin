@@ -15,9 +15,11 @@ from pathlib import Path
 
 ME = 'vera-rubin'
 OURS = ('chiplab-research', ME)
-# fixes merged outside GitHub's pull request flow (Gerrit), with their public record
+# fixes merged outside GitHub's pull request flow (Gerrit, Google's upstream import), with their public record
 EXTRA_MERGED = [('ceres-solver/ceres-solver', 'https://ceres-solver-review.googlesource.com/c/ceres-solver/+/28880',
-                 'Fix covariance truncation for wide Jacobians', '2026-10-16')]
+                 'Fix covariance truncation for wide Jacobians', '2026-10-16'),
+                ('abseil/abseil-cpp', 'https://github.com/abseil/abseil-cpp/pull/2195',  # landed as commit fb7ad83
+                 'StrFormat: honor zero padding in slow scientific conversions', '2026-10-19')]
 API = 'https://api.github.com/'
 TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
