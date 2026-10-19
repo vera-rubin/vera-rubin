@@ -2,23 +2,28 @@
 
 <h3>We find bugs in open-source hardware and software.</h3>
 
+<p><b>59</b> fixes merged upstream &nbsp;·&nbsp; <b>57</b> projects</p>
+
 </div>
 
 <div align="center">
 
-| Project | Found | Outcome |
+| Project | What | Outcome |
 |:---|:---|:---|
-| **[LiteDRAM](https://github.com/enjoy-digital/litedram/pull/415)** | AXI write responses lost under BREADY backpressure | [![credited](https://img.shields.io/badge/%23415-credited-6C2BFF?style=flat-square)](https://github.com/enjoy-digital/litedram/pull/415) |
-| **[LiteDRAM](https://github.com/enjoy-digital/litedram/pull/416)** | DMA AXI byte addressing and WLAST | [![credited](https://img.shields.io/badge/%23416-credited-6C2BFF?style=flat-square)](https://github.com/enjoy-digital/litedram/pull/416) |
-| **[LiteEth](https://github.com/enjoy-digital/liteeth/pull/281)** | ARP cache returning the wrong MAC address | [![credited](https://img.shields.io/badge/%23281-credited-6C2BFF?style=flat-square)](https://github.com/enjoy-digital/liteeth/pull/281) |
-| **[LitePCIe](https://github.com/enjoy-digital/litepcie/pull/193)** | MSI-X upper address and masked interrupts | [![credited](https://img.shields.io/badge/%23193-credited-6C2BFF?style=flat-square)](https://github.com/enjoy-digital/litepcie/pull/193) |
-| **[Highway](https://github.com/google/highway/pull/3475)** | f64 → f32 demotion overflowing on finite values | [![credited](https://img.shields.io/badge/%233475-credited-6C2BFF?style=flat-square)](https://github.com/google/highway/pull/3475) |
-| **[Z3](https://github.com/Z3Prover/z3/issues/11139)** | FP subnormal rounded wrong by `roundToIntegral` | [![fixed](https://img.shields.io/badge/%2311139-fixed-2EA44F?style=flat-square)](https://github.com/Z3Prover/z3/issues/11139) |
-| **[fast_float](https://github.com/fastfloat/fast_float/issues/424)** | `from_chars` overwriting output on invalid input | [![fixed](https://img.shields.io/badge/%23424-fixed-2EA44F?style=flat-square)](https://github.com/fastfloat/fast_float/issues/424) |
-| **[STP](https://github.com/stp/stp/issues/1318)** | Nested `let` scoping | [![fixed](https://img.shields.io/badge/%231318-fixed-2EA44F?style=flat-square)](https://github.com/stp/stp/issues/1318) |
-| **[GTKWave](https://github.com/gtkwave/gtkwave/issues/521)** | `vcd2lxt2` storing wrong settled values | [![fixed](https://img.shields.io/badge/%23521-fixed-2EA44F?style=flat-square)](https://github.com/gtkwave/gtkwave/issues/521) |
-| **[tract](https://github.com/sonos/tract/issues/3003)** | Signed division by a power of two rounding negatives | [![fixed](https://img.shields.io/badge/%233003-fixed-2EA44F?style=flat-square)](https://github.com/sonos/tract/issues/3003) |
-| **[BaseJump STL](https://github.com/bespoke-silicon-group/basejump_stl/issues/757)** | `bsg_mul_add_unsigned` output width | [![fixed](https://img.shields.io/badge/%23757-fixed-2EA44F?style=flat-square)](https://github.com/bespoke-silicon-group/basejump_stl/issues/757) |
+| **[Keras](https://github.com/keras-team/keras)** | Fix batched vector right-hand sides in NumPy and JAX solve | [![merged](https://img.shields.io/badge/%2323932-merged-8250DF?style=flat-square)](https://github.com/keras-team/keras/pull/23932) |
+| **[XGBoost](https://github.com/dmlc/xgboost)** | Fix exact interaction constraints with fewer rows than features | [![merged](https://img.shields.io/badge/%2312716-merged-8250DF?style=flat-square)](https://github.com/dmlc/xgboost/pull/12716) |
+| **[Alibaba MNN](https://github.com/alibaba/MNN)** | Honor ONNX Resize's default nearest mode | [![merged](https://img.shields.io/badge/%234985-merged-8250DF?style=flat-square)](https://github.com/alibaba/MNN/pull/4985) |
+| **[FormatJS](https://github.com/formatjs/formatjs)** | Keep fraction digits when selecting | [![merged](https://img.shields.io/badge/%237619-merged-8250DF?style=flat-square)](https://github.com/formatjs/formatjs/pull/7619) |
+| **[Pillow](https://github.com/python-pillow/Pillow)** | Allow floating point constants in ImageMath operations | [![merged](https://img.shields.io/badge/%2310218-merged-8250DF?style=flat-square)](https://github.com/python-pillow/Pillow/pull/10218) |
+| **[Darts](https://github.com/unit8co/darts)** | Fix backtest ignoring val_length when generating forecasts | [![merged](https://img.shields.io/badge/%233264-merged-8250DF?style=flat-square)](https://github.com/unit8co/darts/pull/3264) |
+| **[serde_json](https://github.com/serde-rs/json)** | Preserve arbitrary precision in Number deserialization | [![merged](https://img.shields.io/badge/%231355-merged-8250DF?style=flat-square)](https://github.com/serde-rs/json/pull/1355) |
+| **[fontTools](https://github.com/fonttools/fonttools)** | Inherit CFF2 vsindex from Private DICT | [![merged](https://img.shields.io/badge/%234328-merged-8250DF?style=flat-square)](https://github.com/fonttools/fonttools/pull/4328) |
+| **[Ceres Solver](https://github.com/ceres-solver/ceres-solver)** | Fix covariance truncation for wide Jacobians | [![merged](https://img.shields.io/badge/%2328880-merged-8250DF?style=flat-square)](https://ceres-solver-review.googlesource.com/c/ceres-solver/+/28880) |
+| **[Verilator](https://github.com/verilator/verilator)** | Add case item extension coverage (#8720) | [![merged](https://img.shields.io/badge/%238756-merged-8250DF?style=flat-square)](https://github.com/verilator/verilator/pull/8756) |
+| **[GTSAM](https://github.com/borglab/gtsam)** | Fix robust weight queries to use whitened residuals | [![merged](https://img.shields.io/badge/%232855-merged-8250DF?style=flat-square)](https://github.com/borglab/gtsam/pull/2855) |
+| **[tract](https://github.com/sonos/tract)** | Preserve truncation in signed integer division | [![merged](https://img.shields.io/badge/%233021-merged-8250DF?style=flat-square)](https://github.com/sonos/tract/pull/3021) |
+| **[Noda Time](https://github.com/nodatime/nodatime)** | Badíʿ PlusMonths for additions ending in month 19 | [![merged](https://img.shields.io/badge/%231907-merged-8250DF?style=flat-square)](https://github.com/nodatime/nodatime/pull/1907) |
+| **[ISPC](https://github.com/ispc/ispc)** | Fix unsigned 64-bit saturating multiplication overflow | [![merged](https://img.shields.io/badge/%233950-merged-8250DF?style=flat-square)](https://github.com/ispc/ispc/pull/3950) |
 
 </div>
 
