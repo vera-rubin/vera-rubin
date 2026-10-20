@@ -2,7 +2,7 @@
 
 <h3>We find bugs in open-source hardware and software.</h3>
 
-<p><b>73</b> fixes merged upstream &nbsp;·&nbsp; <b>69</b> projects</p>
+<p><b>74</b> fixes merged upstream &nbsp;·&nbsp; <b>70</b> projects</p>
 
 </div>
 
@@ -44,6 +44,7 @@
 | **[Unit8 SA / darts](https://github.com/unit8co/darts)** | Fix backtest ignoring val_length when generating forecasts | <a href="https://github.com/unit8co/darts/pull/3264"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
 | **[gem5](https://github.com/gem5/gem5)** | NaN-box finite fminm.s and fmaxm.s results | <a href="https://github.com/gem5/gem5/pull/3605"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
 | **[CESNET / libyang](https://github.com/CESNET/libyang)** | Plugins types REFACTOR build strings with ly_append_str | <a href="https://github.com/CESNET/libyang/pull/2591"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
+| **[CVXPY](https://github.com/cvxpy/cvxpy)** | Fix dist_ratio evaluation after center Parameter updates | <a href="https://github.com/cvxpy/cvxpy/pull/3572"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
 | **[ml.js / matrix](https://github.com/mljs/matrix)** | Use absolute values for max norm | <a href="https://github.com/mljs/matrix/pull/223"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
 | **[Sonos, Inc. / tract](https://github.com/sonos/tract)** | Preserve truncation in signed integer division | <a href="https://github.com/sonos/tract/pull/3021"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
 | **[CasADi](https://github.com/casadi/casadi)** | Fix copysign derivatives for negative magnitude inputs | <a href="https://github.com/casadi/casadi/pull/4440"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/merged-dark.svg" /><img src="assets/merged.svg" width="16" height="16" alt="merged" /></picture></a> |
