@@ -145,5 +145,3 @@
 
 <a href="https://github.com/chiplab-research"><img src="https://img.shields.io/badge/@chiplab--research-111111?style=for-the-badge&logo=github" alt="chiplab-research" /></a>
 <a href="https://chiplab.donmakino.com"><img src="https://img.shields.io/badge/ChipLab-111111?style=for-the-badge" alt="ChipLab" /></a>
-
-</div>
