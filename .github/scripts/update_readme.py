@@ -22,6 +22,9 @@ EXTRA_MERGED = [('ceres-solver/ceres-solver', 'https://ceres-solver-review.googl
                  'StrFormat: honor zero padding in slow scientific conversions', '2026-10-19'),
                 ('openxla/stablehlo', 'https://github.com/openxla/stablehlo/pull/3041',  # landed as commit 57f1d925
                  'Fix uniform_dequantize lowering for non-f32 expressed types', '2026-11-11')]
+ADVISORY_URL = 'https://github.com/lowRISC/opentitan/security/advisories/GHSA-4mcx-p9jh-39j9'
+ADVISORY_TEXT = 'OpenTitan security advisory GHSA-4mcx-p9jh-39j9'
+OWNERS_SHOWN = 6
 API = 'https://api.github.com/'
 TOKEN = os.environ.get('GITHUB_TOKEN', '')
 
@@ -91,6 +94,11 @@ def label(repo, org_name, kind):
     return f'{org} / {name}'
 
 
+def owner_name(repo, org_name, kind):
+    """The owner part of the label: 'Alibaba' for 'Alibaba / MNN', 'Keras' for 'Keras'."""
+    return label(repo, org_name, kind).split(' / ')[0]
+
+
 def clean_title(t):
     """Drop "[Module:Type]" and "scope(x): " prefixes; keep the case (titles often start with code)."""
     t = re.sub(r'^\s*(\[[^\]]*\]\s*|[\w./-]+(\([^)]*\))?!?:\s*)+', '', t).strip().lstrip(':;-– ').strip()
@@ -113,6 +121,7 @@ def collect():
         r['stars'] = stars(r['repo'])
         name, r['org_followers'], kind = owner_info(r['repo'].split('/')[0])
         r['label'] = label(r['repo'], name, kind)
+        r['owner'] = owner_name(r['repo'], name, kind)
     rows = sorted(rows, key=lambda r: r['at'], reverse=True)
     rows = sorted(rows, key=lambda r: (-r['org_followers'], -r['stars']))
     return rows
@@ -120,8 +129,14 @@ def collect():
 
 def readme(rows):
     projects = len({r['repo'].lower() for r in rows})
+    owners = []  # the biggest owners with a merged row, in table order
+    for r in rows:
+        if r['owner'] not in owners:
+            owners.append(r['owner'])
     lines = ['<div align="center">', '', '<h3>We find bugs in open-source hardware and software.</h3>', '',
              f'<p><b>{len(rows)}</b> fixes merged upstream &nbsp;·&nbsp; <b>{projects}</b> projects</p>',
+             '', f'<p>Credited reporter: <a href="{ADVISORY_URL}">{ADVISORY_TEXT}</a></p>',
+             '', f'<p>{" &nbsp;·&nbsp; ".join(owners[:OWNERS_SHOWN])}</p>',
              '', '</div>', '',
              '<div align="center">', '', '| Project | Fix | PR |', '|:---|:---|:---:|']
     for r in rows:
